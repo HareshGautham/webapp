@@ -29,9 +29,9 @@ def display_sentiment_chart(commentslst):
 
 def display_sentiment_summary(commentslst):
     num_comments = len(commentslst)
-    positive_count = 0
-    neutral_count = 0
-    negative_count = 0
+    positive_count = 1
+    neutral_count = 1
+    negative_count = 1
 
     for comment in commentslst:
         sentiment_scores = analyze_sentiment(comment)
