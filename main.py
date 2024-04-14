@@ -80,7 +80,8 @@ def main_page():
     try:
           loader = instaloader.Instaloader()
           st.write("logging in")
-          loader.login(username, password)
+        #   loader.login(username, password)
+          loader.login(r"gauthamharesh", r"Krishna@0135")
           st.success("Logged in as {}".format(username))
           st.write("Redirecting to home page...")
           st.session_state.runpage = HomePage
