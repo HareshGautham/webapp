@@ -44,9 +44,9 @@ def display_sentiment_summary(commentslst):
         else:
             neutral_count += 1
 
-    positive_percentage = ((positive_count+0.1) / (num_comments+1)) * 100
-    neutral_percentage = ((neutral_count+0.1) / (num_comments+1)) * 100
-    negative_percentage = ((negative_count+0.1) / (num_comments+1)) * 100
+    positive_percentage = ((positive_count+5) / (num_comments+10)) * 100
+    neutral_percentage = ((neutral_count+5) / (num_comments+10)) * 100
+    negative_percentage = ((negative_count+5) / (num_comments+10)) * 100
 
     st.title("Sentiment Summary")
     st.write(f"Total Comments: {num_comments}")
